@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+         <title>Rock Paper Scissors</title>
+         <meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel="icon" type="png/image" href="images/favicon-32x32.png">
+		 <link rel="stylesheet" href="styles.css">
+		 <link rel="preconnect" href="https://fonts.gstatic.com">
+           <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700&display=swap" rel="stylesheet">
+		 <!--font-family: 'Barlow Semi Condensed', sans-serif;-->
+  </head>
+  <body>
+   <header>
+    <img src="images/logo.svg">
+    <div class="score-container">
+	 <p>SCORE</p>
+	 <span id="score">0</span>
+	</div>
+   </header>
+   
+   <img src="images/bg-triangle.svg" id="triangle">
+   <div class="game-container">
+    <div class="p">
+     <div class="game"><img src="images/icon-paper.svg"></div>
+	</div>
+	<div class="r">
+     <div class="game"><img src="images/icon-rock.svg"></div>
+	</div>
+	<div class="s">
+     <div class="game"><img src="images/icon-scissors.svg"></div>
+	</div>
+   </div>
+
+   <div class="battle-container">
+     <div class="battle">
+        <h2>YOU PICKED</h2>
+        <div class="p-2">
+          <div class="game"><img src="images/icon-paper.svg"></div>
+          </div>
+          <div class="r-2">
+          <div class="game"><img src="images/icon-rock.svg"></div>
+          </div>
+          <div class="s-2">
+          <div class="game"><img src="images/icon-scissors.svg"></div>
+          </div>
+     </div>
+     <div class="game-over">
+          <h1 id="state-message"></h1>
+          <span class="play-again">PLAY AGAIN</span>
+     </div>
+     <div class="battle">
+        <h2>THE HOUSE PICKED</h2>
+        <div class="householder"></div>
+        <div class="p-3">
+          <div class="game"><img src="images/icon-paper.svg"></div>
+          </div>
+          <div class="r-3">
+          <div class="game"><img src="images/icon-rock.svg"></div>
+          </div>
+          <div class="s-3">
+          <div class="game"><img src="images/icon-scissors.svg"></div>
+          </div>
+     </div>
+   </div>
+   
+   <span class="rules" onclick="openRules()">RULES</span>
+   <div class="overlay">
+    <div class="rules-modal">
+     <h1>RULES</h1>
+	 <img id="close" onclick="openRules()" src="images/icon-close.svg">
+     <img id="rules-img" src="images/image-rules.svg">
+    </div>
+   </div>
+  
+  <script src="app.js"></script>
+  </body>
+ </html>
